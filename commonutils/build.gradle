@@ -26,8 +26,9 @@ apply from: 'publish.gradle'
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     def supportVersion = '24.2.1'
-    compile "com.android.support:support-compat:$supportVersion"
     compile "com.android.support:support-annotations:$supportVersion"
+    compile "com.android.support:support-compat:$supportVersion"
+    compile "com.android.support:support-fragment:$supportVersion"
 
     // Unit testing dependencies
     def junitVersion = '4.12'

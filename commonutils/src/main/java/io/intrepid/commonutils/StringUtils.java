@@ -471,7 +471,7 @@ public abstract class StringUtils {
      *
      * @param is The input stream of UTF-8 characters.
      * @return The String obtained from the input stream.
-     * @throws IOException
+     * @throws IOException If an I/O error occurs
      */
     public static String toString(InputStream is) throws IOException {
         final char[] buffer = LOCAL_CHAR_ARRAY_BUFFER.get();

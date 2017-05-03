@@ -8,6 +8,7 @@ import android.util.TypedValue;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
 
+@SuppressWarnings({"WeakerAccess", "unused"})
 public class AndroidUtils {
     /**
      * Hide the soft keyboard

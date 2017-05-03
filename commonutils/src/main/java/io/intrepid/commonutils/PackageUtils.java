@@ -5,6 +5,7 @@ import android.content.pm.ApplicationInfo;
 import android.content.pm.PackageManager;
 import android.support.annotation.NonNull;
 
+@SuppressWarnings("unused")
 public class PackageUtils {
     /**
      * Checks if an app is installed and enabled

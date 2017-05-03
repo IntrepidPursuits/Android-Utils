@@ -6,6 +6,7 @@ import android.support.annotation.Nullable;
 import java.util.Collections;
 import java.util.List;
 
+@SuppressWarnings("WeakerAccess")
 public class JavaUtils {
 
     /**

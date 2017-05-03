@@ -16,6 +16,7 @@ import android.view.ViewParent;
 import android.widget.LinearLayout;
 import android.widget.Toast;
 
+@SuppressWarnings({"WeakerAccess", "unused"})
 public class ViewUtils {
 
     /**

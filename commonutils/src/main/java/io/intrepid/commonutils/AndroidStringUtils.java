@@ -2,6 +2,7 @@ package io.intrepid.commonutils;
 
 import android.os.Build;
 import android.text.Editable;
+import android.text.Html;
 import android.text.SpannableStringBuilder;
 import android.text.Spanned;
 
@@ -70,6 +71,22 @@ public abstract class AndroidStringUtils {
             builder.setSpan(what, start, builder.length(), flags);
 
             return builder;
+        }
+    }
+
+    /**
+     * Implements {@link Html#fromHtml(String, int)} for versions below api-level 24
+     *
+     * @param source The string to be styled with HTML tags
+     * @param flags  Any behavior flags in {@link Html}, or 0 for default behavior.
+     * @return The text styled with HTML tags.
+     */
+    public static Spanned fromHtml(String source, int flags) {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
+            return Html.fromHtml(source, flags);
+        } else {
+            //noinspection deprecation
+            return Html.fromHtml(source);
         }
     }
 }

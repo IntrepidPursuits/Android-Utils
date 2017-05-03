@@ -75,8 +75,8 @@ public abstract class AndroidStringUtils {
     }
 
     /**
-     * Implements {@link Html#fromHtml(String, int)} for versions below api-level 24
-     *
+     * Implements {@link Html#fromHtml(String, int)}. Prior to API level 24, the flags will not be
+     * applied and this method simply calls through to {@link Html#fromHtml(String)}.
      * @param source The string to be styled with HTML tags
      * @param flags  Any behavior flags in {@link Html}, or 0 for default behavior.
      * @return The text styled with HTML tags.

@@ -1,7 +1,12 @@
 Change Log
 ==========
 
-Version 0.2.0 *(2017-05-19)*
+Version 0.2.2 *(2017-06-26)*
+----------------------------
+* New:  `AndroidStringUtils.parseUriFromString()` method for adding the scheme (http://, https://, etc.) if it was missing when parsing a Uri from a String.
+* Also created `AndroidStringUtils.parseHttpUriFromString()` and `AndroidStringUtils.parseHttpsUriFromString()` convenience methods.
+
+Version 0.2.1 *(2017-05-19)*
 ----------------------------
 * Migrate to maven central
 * New: `AndroidStringUtils.fromHtml()` method for calling the version appropriate `Html.fromHtml()`.

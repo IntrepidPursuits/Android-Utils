@@ -7,7 +7,7 @@ Setup
 Add the following lines to your build.gradle file:
 ```
 dependencies {
-    compile "io.intrepid.commonutils:commonutils:0.2.1"
+    compile "io.intrepid.commonutils:commonutils:0.2.2"
 }
 ```
 
